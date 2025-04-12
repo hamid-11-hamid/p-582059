@@ -1,13 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import HeroSection from "@/components/crypto/HeroSection";
+import TokenPurchaseForm from "@/components/crypto/TokenPurchaseForm";
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Lato:wght@400;500;600;700&display=swap"
+      />
+      <main className="max-w-none flex min-h-screen gap-24 bg-black mx-auto px-24 py-[122px] max-md:max-w-[991px] max-md:flex-col max-md:gap-[60px] max-md:px-10 max-md:py-[60px] max-sm:max-w-screen-sm max-sm:px-5 max-sm:py-10">
+        <section aria-labelledby="hero-heading">
+          <HeroSection />
+        </section>
+
+        <section
+          aria-label="Token Purchase Form"
+          className="flex-1 right-[section] max-md:flex max-md:justify-center"
+        >
+          <TokenPurchaseForm />
+        </section>
+      </main>
+    </>
   );
 };
 
