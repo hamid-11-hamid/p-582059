@@ -4,6 +4,7 @@ import Header from "@/components/crypto/Header";
 import HeroSection from "@/components/crypto/HeroSection";
 import TokenPurchaseForm from "@/components/crypto/TokenPurchaseForm";
 import CountdownTimer from "@/components/crypto/CountdownTimer";
+import FeaturesSection from "@/components/crypto/FeaturesSection";
 
 const Index: React.FC = () => {
   // Set target date 15 days from now for the countdown
@@ -39,6 +40,9 @@ const Index: React.FC = () => {
               <TokenPurchaseForm />
             </section>
           </div>
+          
+          {/* New Features Section */}
+          <FeaturesSection />
         </main>
       </div>
     </>
