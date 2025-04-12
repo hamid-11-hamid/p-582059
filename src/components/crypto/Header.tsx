@@ -5,23 +5,23 @@ import MobileMenu from "./MobileMenu";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-black w-full py-4 px-24 flex items-center justify-between max-md:px-10 max-sm:px-5 sticky top-0 z-50 border-b border-gray-900">
-      <div className="text-white text-2xl font-bold">LOGO</div>
+    <header className="bg-black/80 backdrop-blur-sm w-full py-4 px-6 md:px-12 lg:px-24 flex items-center justify-between sticky top-0 z-50 border-b border-gray-900">
+      <div className="text-[#FFD700] text-2xl font-bold font-['Exo']">PIETY</div>
       
-      <nav className="hidden md:flex items-center gap-10">
-        <a href="#" className="text-white hover:text-[#EDC211] transition-colors">
+      <nav className="hidden md:flex items-center gap-8 lg:gap-10">
+        <a href="#" className="text-white hover:text-[#FFD700] transition-colors text-sm">
           Home
         </a>
-        <a href="#" className="text-white hover:text-[#EDC211] transition-colors">
+        <a href="#" className="text-white hover:text-[#FFD700] transition-colors text-sm">
           Tokenomics
         </a>
-        <a href="#" className="text-white hover:text-[#EDC211] transition-colors">
+        <a href="#" className="text-white hover:text-[#FFD700] transition-colors text-sm">
           Whitepaper
         </a>
-        <a href="#" className="text-white hover:text-[#EDC211] transition-colors">
+        <a href="#" className="text-white hover:text-[#FFD700] transition-colors text-sm">
           Sale Structures
         </a>
-        <a href="#" className="text-white hover:text-[#EDC211] transition-colors">
+        <a href="#" className="text-white hover:text-[#FFD700] transition-colors text-sm">
           Roadmap
         </a>
       </nav>

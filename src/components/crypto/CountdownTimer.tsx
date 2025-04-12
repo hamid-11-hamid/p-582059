@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from "react";
-import { Clock } from "lucide-react";
 
 interface TimeLeft {
   days: number;
@@ -48,48 +47,48 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   };
 
   return (
-    <div className="w-full py-6 mb-12">
-      <h2 className="text-center text-[#FFD700] text-3xl font-bold mb-6">
+    <div className="w-full text-center">
+      <h2 className="text-[#FFD700] text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
         Token Presale Begins In
       </h2>
       <div className="flex justify-center items-center">
-        <div className="bg-[#111] rounded-lg p-4 shadow-lg flex gap-2 items-center max-w-2xl">
+        <div className="flex gap-4 items-center justify-center">
           {/* Days */}
-          <div className="flex flex-col items-center flex-1">
-            <div className="bg-[#111828] text-[#FFD700] text-5xl font-bold p-4 rounded-md min-w-20 flex items-center justify-center">
+          <div className="flex flex-col items-center">
+            <div className="bg-black border border-[#111828] text-[#FFD700] text-4xl md:text-5xl lg:text-6xl font-bold p-4 rounded-md min-w-16 md:min-w-20 flex items-center justify-center">
               {formatNumber(timeLeft.days)}
             </div>
-            <span className="text-gray-400 text-sm mt-1">Days</span>
+            <span className="text-gray-400 text-sm mt-2">Days</span>
           </div>
 
-          <div className="text-white text-4xl font-bold">:</div>
+          <div className="text-white text-4xl font-bold relative bottom-4">:</div>
 
           {/* Hours */}
-          <div className="flex flex-col items-center flex-1">
-            <div className="bg-[#111828] text-[#FFD700] text-5xl font-bold p-4 rounded-md min-w-20 flex items-center justify-center">
+          <div className="flex flex-col items-center">
+            <div className="bg-black border border-[#111828] text-[#FFD700] text-4xl md:text-5xl lg:text-6xl font-bold p-4 rounded-md min-w-16 md:min-w-20 flex items-center justify-center">
               {formatNumber(timeLeft.hours)}
             </div>
-            <span className="text-gray-400 text-sm mt-1">Hours</span>
+            <span className="text-gray-400 text-sm mt-2">Hours</span>
           </div>
 
-          <div className="text-white text-4xl font-bold">:</div>
+          <div className="text-white text-4xl font-bold relative bottom-4">:</div>
 
           {/* Minutes */}
-          <div className="flex flex-col items-center flex-1">
-            <div className="bg-[#111828] text-[#FFD700] text-5xl font-bold p-4 rounded-md min-w-20 flex items-center justify-center">
+          <div className="flex flex-col items-center">
+            <div className="bg-black border border-[#111828] text-[#FFD700] text-4xl md:text-5xl lg:text-6xl font-bold p-4 rounded-md min-w-16 md:min-w-20 flex items-center justify-center">
               {formatNumber(timeLeft.minutes)}
             </div>
-            <span className="text-gray-400 text-sm mt-1">Minutes</span>
+            <span className="text-gray-400 text-sm mt-2">Minutes</span>
           </div>
 
-          <div className="text-white text-4xl font-bold">:</div>
+          <div className="text-white text-4xl font-bold relative bottom-4">:</div>
 
           {/* Seconds */}
-          <div className="flex flex-col items-center flex-1">
-            <div className="bg-[#111828] text-[#FFD700] text-5xl font-bold p-4 rounded-md min-w-20 flex items-center justify-center">
+          <div className="flex flex-col items-center">
+            <div className="bg-black border border-[#111828] text-[#FFD700] text-4xl md:text-5xl lg:text-6xl font-bold p-4 rounded-md min-w-16 md:min-w-20 flex items-center justify-center">
               {formatNumber(timeLeft.seconds)}
             </div>
-            <span className="text-gray-400 text-sm mt-1">Seconds</span>
+            <span className="text-gray-400 text-sm mt-2">Seconds</span>
           </div>
         </div>
       </div>

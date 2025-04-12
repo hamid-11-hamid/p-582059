@@ -1,3 +1,4 @@
+
 import React from "react";
 
 interface ProgressBarProps {
@@ -18,17 +19,17 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
 
   return (
     <>
-      <div className="h-[21px] relative bg-[rgba(9,31,47,0.80)] mb-[15px]">
+      <div className="h-5 relative bg-[rgba(9,31,47,0.40)] mb-3 rounded-full overflow-hidden">
         <div
-          className="h-5 shadow-[0_1.875px_9.844px_0_#F9FF38]"
+          className="h-full bg-gradient-to-r from-[#FFD700]/80 to-[#F9FF38] shadow-[0_0_10px_rgba(249,255,56,0.5)]"
           style={{ width: progressWidth }}
           aria-valuemin={0}
           aria-valuemax={100}
           aria-valuenow={progress}
           role="progressbar"
         />
-        <div className="absolute -translate-y-2/4 text-[#EDC211] text-sm font-bold opacity-60 right-[7px] top-2/4">
-          {soldAmount} Sold
+        <div className="absolute -translate-y-1/2 text-[#EDC211] text-sm font-bold right-3 top-1/2">
+          {soldAmount}
         </div>
       </div>
       <div className="text-center text-white text-sm leading-[21px] mb-5">

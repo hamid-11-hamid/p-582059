@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import ProgressBar from "./ProgressBar";
 import PriceInfo from "./PriceInfo";
@@ -46,18 +47,18 @@ const TokenPurchaseForm: React.FC = () => {
   };
 
   return (
-    <div className="w-[540px] shadow-[0_0.881px_0_2.812px_rgba(255,255,255,0.12)_inset] backdrop-blur-[6.76px] bg-black p-[16.875px] rounded-[10.575px] border-[2.812px] border-solid border-[#F9FF38] max-md:w-full max-md:max-w-[540px] max-sm:p-3">
-      <div className="p-[17px] rounded-[10.575px]">
-        <div className="text-center mb-[30px]">
-          <h2 className="text-white text-[25.5px] font-bold">Buy Now</h2>
-          <div className="text-[#F9FF38] text-[25.5px] font-bold mt-2.5">
+    <div className="w-full max-w-[540px] shadow-[0_0_30px_rgba(255,215,0,0.1)] backdrop-blur-[6.76px] bg-black/80 p-5 rounded-2xl border-2 border-solid border-[#FFD700]/30">
+      <div className="p-4 rounded-[10.575px]">
+        <div className="text-center mb-6">
+          <h2 className="text-white text-2xl font-bold">Buy Now</h2>
+          <div className="text-[#FFD700] text-2xl font-bold mt-1">
             Before Price Rises
           </div>
         </div>
 
         <ProgressBar
           progress={20.15}
-          soldAmount="20.15%"
+          soldAmount="20.15% Sold"
           raisedAmount="$13,841,048.3"
           tokensSold="1,000,000"
         />
